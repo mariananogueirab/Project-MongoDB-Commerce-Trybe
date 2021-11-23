@@ -11,7 +11,7 @@ db.produtos.updateMany(
 );
 
 db.produtos.updateMany(
-  { tags: { $all: ["ave"] } },
+  { tags: "ave" },
   { $inc: { avaliacao: 3 } },
   { upsert: true },
 );
